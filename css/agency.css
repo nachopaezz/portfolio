@@ -149,6 +149,7 @@ fieldset[disabled] .btn-xl.active {
 .navbar-default .navbar-brand {
   color: #F5EB56;
   font-family: "Montserrat";
+  padding-top: 5px;
 }
 
 .navbar-default .navbar-brand:hover,
@@ -213,7 +214,7 @@ fieldset[disabled] .btn-xl.active {
   }
   .navbar-default.navbar-shrink {
     background-color: #222222;
-    padding: 10px 0;
+    padding: 20px 0;
   }
   .navbar-default.navbar-shrink .navbar-brand {
     font-size: 1.5em;
@@ -339,16 +340,15 @@ section h3.section-subheading {
   margin: 0 auto;
   background-color: white;
   text-align: center;
-  padding: 25px;
+  padding: 20px;
 }
 #portfolio .portfolio-item .portfolio-caption h4 {
   text-transform: none;
   margin: 0;
 }
 #portfolio .portfolio-item .portfolio-caption p {
-  font-family: "Droid Serif", "Helvetica Neue", Helvetica, Arial, sans-serif;
-  font-style: italic;
-  font-size: 16px;
+  font-family: "Montserrat";
+  font-size: 14px;
   margin: 0;
 }
 #portfolio * {
@@ -535,21 +535,7 @@ section h3.section-subheading {
   text-align: center;
   margin-bottom: 50px;
 }
-.team-member img {
-  margin: 0 auto;
-  border: 7px solid white;
-}
-.team-member h4 {
-  margin-top: 25px;
-  margin-bottom: 0;
-  text-transform: none;
-}
-.team-member p {
-  margin-top: 0;
-}
-aside.clients img {
-  margin: 50px auto;
-}
+
 section#contact {
   background-color: #222222;
   background-image: url('../img/map-image.png');
@@ -560,11 +546,11 @@ section#contact .section-heading {
   color: white;
 }
 section#contact .form-group {
-  margin-bottom: 25px;
+  margin-bottom: 20px;
 }
 section#contact .form-group input,
 section#contact .form-group textarea {
-  padding: 20px;
+  padding: 21px;
 }
 section#contact .form-group input.form-control {
   height: auto;
@@ -577,7 +563,7 @@ section#contact .form-control:focus {
   box-shadow: none;
 }
 section#contact ::-webkit-input-placeholder {
-  font-family: "Montserrat", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-family: "Montserrat";
   text-transform: uppercase;
   font-weight: 700;
   color: #bbbbbb;
@@ -669,7 +655,7 @@ ul.social-buttons li a:active {
 }
 .portfolio-modal .modal-content p.item-intro {
   margin: 20px 0 30px;
-  font-family: "Droid Serif", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-family: "Montserrat";
   font-style: italic;
   font-size: 16px;
 }
@@ -693,9 +679,9 @@ ul.social-buttons li a:active {
   opacity: 0.3;
 }
 .portfolio-modal .close-modal .lr {
-  height: 75px;
-  width: 1px;
-  margin-left: 35px;
+  height: 25px;
+  width: 2px;
+  margin-left: 55px;
   background-color: #222222;
   transform: rotate(45deg);
   -ms-transform: rotate(45deg);
@@ -705,8 +691,8 @@ ul.social-buttons li a:active {
   z-index: 1051;
 }
 .portfolio-modal .close-modal .lr .rl {
-  height: 75px;
-  width: 1px;
+  height: 25px;
+  width: 2px;
   background-color: #222222;
   transform: rotate(90deg);
   -ms-transform: rotate(90deg);
@@ -732,7 +718,4 @@ img::selection {
 }
 img::-moz-selection {
   background: transparent;
-}
-body {
-  webkit-tap-highlight-color: #F5EB56;
 }
