@@ -537,10 +537,10 @@ section h3.section-subheading {
 }
 
 section#contact {
-  background-color: #222222;
-  background-image: url('../img/map-image.png');
+  background-color: #F7F7F7;
   background-position: center;
   background-repeat: no-repeat;
+  padding: 0px;
 }
 section#contact .section-heading {
   color: white;
@@ -597,6 +597,7 @@ footer {
 }
 footer span.copyright {
   line-height: 40px;
+  color: black;
   font-family: "Montserrat", "Helvetica Neue", Helvetica, Arial, sans-serif;
   text-transform: uppercase;
   text-transform: none;
