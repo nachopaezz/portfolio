@@ -174,9 +174,8 @@ fieldset[disabled] .btn-xl.active {
 }
 .navbar-default .nav li a {
   font-family: "Montserrat";
-  text-transform: uppercase;
   font-weight: 32.4px;
-  letter-spacing: 0px;
+  letter-spacing: 2px;
   color: white;
 }
 .navbar-default .nav li a:hover,
