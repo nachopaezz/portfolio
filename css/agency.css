@@ -23,13 +23,13 @@ a.active {
   outline: none;
 }
 a {
-  color: blue;
+  color: rgb(52,126,235);
 }
 a:hover,
 a:focus,
 a:active,
 a.active {
-  color: blue;
+  color: rgb(52,126,235);
 }
 h1,
 h2,
@@ -45,7 +45,7 @@ h6 {
   margin: 0 auto;
 }
 .bg-light-gray {
-  background-color: #f7f7f7;
+  background-color: black;
 }
 .bg-darkest-gray {
   background-color: #222222;
@@ -97,7 +97,6 @@ fieldset[disabled] .btn-primary.active {
 .btn-xl {
   color: white;
   background-color: black;
-  border-color: black;
   font-family: "Montserrat";
   text-transform: uppercase;
   font-weight: 700;
@@ -135,7 +134,7 @@ fieldset[disabled] .btn-xl:active,
 .btn-xl[disabled].active,
 fieldset[disabled] .btn-xl.active {
   background-color: black;
-  border-color: black#F5EB56;
+  border-color: black;
 }
 .btn-xl .badge {
   color: black;
@@ -212,7 +211,8 @@ fieldset[disabled] .btn-xl.active {
     border-radius: 3px;
   }
   .navbar-default.navbar-shrink {
-    background-color: #222222;
+    background-color: black;
+    opacity: 85%;
     padding: 20px 0;
   }
   .navbar-default.navbar-shrink .navbar-brand {
@@ -273,11 +273,21 @@ section {
   padding: 150px 0;
 }
 section h2.section-heading {
+  color: black;
   font-size: 40px;
   margin-top: 0;
   margin-bottom: 15px;
 }
+
+section h2.section-heading-portfolio {
+  color: white;
+  font-size: 40px;
+  margin-top: 0;
+  margin-bottom: 15px;
+}
+
 section h3.section-subheading {
+  color: white;
   font-size: 16px;
   font-family: "Montserrat";
   text-transform: none;
@@ -338,6 +348,7 @@ section h3.section-subheading {
   max-width: 400px;
   margin: 0 auto;
   background-color: white;
+  border-radius: 0px 0px 10px 10px;
   text-align: center;
   padding: 20px;
 }
@@ -369,7 +380,7 @@ section h3.section-subheading {
   position: absolute;
   content: "";
   width: 2px;
-  background-color: black;
+  background-color: grey;
   left: 40px;
   margin-left: -1.5px;
 }
