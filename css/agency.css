@@ -639,6 +639,7 @@ ul.social-buttons li a:active {
 }
 .portfolio-modal .modal-content {
   border-radius: 0;
+  background-color: black;
   background-clip: border-box;
   -webkit-box-shadow: none;
   box-shadow: none;
@@ -646,23 +647,28 @@ ul.social-buttons li a:active {
   min-height: 100%;
   padding: 100px 0;
   text-align: center;
+  color: white;
 }
 .portfolio-modal .modal-content h2 {
   margin-bottom: 15px;
   font-size: 3em;
+  color: white;
 }
 .portfolio-modal .modal-content p {
   margin-bottom: 30px;
+  color: white;
 }
 .portfolio-modal .modal-content p.item-intro {
   margin: 20px 0 30px;
   font-family: "Montserrat";
   font-style: italic;
   font-size: 16px;
+  color: white;
 }
 .portfolio-modal .modal-content ul.list-inline {
   margin-bottom: 30px;
   margin-top: 0;
+  color: white;
 }
 .portfolio-modal .modal-content img {
   margin-bottom: 30px;
@@ -675,6 +681,7 @@ ul.social-buttons li a:active {
   top: 25px;
   right: 25px;
   cursor: pointer;
+  color: white;
 }
 .portfolio-modal .close-modal:hover {
   opacity: 0.3;
@@ -683,7 +690,7 @@ ul.social-buttons li a:active {
   height: 25px;
   width: 2px;
   margin-left: 55px;
-  background-color: #222222;
+  background-color: white;
   transform: rotate(45deg);
   -ms-transform: rotate(45deg);
   /* IE 9 */
@@ -694,7 +701,7 @@ ul.social-buttons li a:active {
 .portfolio-modal .close-modal .lr .rl {
   height: 25px;
   width: 2px;
-  background-color: #222222;
+  background-color: white;
   transform: rotate(90deg);
   -ms-transform: rotate(90deg);
   /* IE 9 */
