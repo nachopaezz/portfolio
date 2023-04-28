@@ -6,7 +6,7 @@ body {
   color: #777777;
 }
 .text-primary {
-  color: black;
+  color: #252525;
 }
 p {
   font-size: 14px;
@@ -45,13 +45,13 @@ h6 {
   margin: 0 auto;
 }
 .bg-light-gray {
-  background-color: black;
+  background-color: #252525;
 }
 .bg-darkest-gray {
   background-color: #222222;
 }
 .btn-primary {
-  color: black;
+  color: #252525;
   background-color: white;
   border-color: white;
   font-family: "Montserrat";
@@ -64,8 +64,8 @@ h6 {
 .btn-primary.active,
 .open .dropdown-toggle.btn-primary {
   color: white;
-  background-color: black;
-  border-color: black;
+  background-color: #252525;
+  border-color: #252525;
 }
 .btn-primary:active,
 .btn-primary.active,
@@ -88,15 +88,15 @@ fieldset[disabled] .btn-primary:active,
 .btn-primary[disabled].active,
 fieldset[disabled] .btn-primary.active {
   background-color: white;
-  border-color: black;
+  border-color: #252525;
 }
 .btn-primary .badge {
-  color: black;
+  color: #252525;
   background-color: white;
 }
 .btn-xl {
   color: white;
-  background-color: black;
+  background-color: #252525;
   font-family: "Montserrat";
   text-transform: uppercase;
   font-weight: 700;
@@ -109,9 +109,9 @@ fieldset[disabled] .btn-primary.active {
 .btn-xl:active,
 .btn-xl.active,
 .open .dropdown-toggle.btn-xl {
-  color: black;
+  color: #252525;
   background-color: white;
-  border-color: black;
+  border-color: #252525;
 }
 .btn-xl:active,
 .btn-xl.active,
@@ -133,11 +133,11 @@ fieldset[disabled] .btn-xl:active,
 .btn-xl.disabled.active,
 .btn-xl[disabled].active,
 fieldset[disabled] .btn-xl.active {
-  background-color: black;
-  border-color: black;
+  background-color: #252525;
+  border-color: #252525;
 }
 .btn-xl .badge {
-  color: black;
+  color: #252525;
   background-color: white;
 }
 
@@ -146,7 +146,7 @@ fieldset[disabled] .btn-xl.active {
   border-color: transparent;
 }
 .navbar-default .navbar-brand {
-  color: black;
+  color: #252525;
   font-family: "Montserrat";
   padding-top: 5px;
 }
@@ -155,14 +155,14 @@ fieldset[disabled] .btn-xl.active {
 .navbar-default .navbar-brand:focus,
 .navbar-default .navbar-brand:active,
 .navbar-default .navbar-brand.active {
-  color: black;
+  color: #252525;
 }
 .navbar-default .navbar-collapse {
   border-color: rgba(255, 255, 255, 0.02);
 }
 .navbar-default .navbar-toggle {
-  background-color: black;
-  border-color: black;
+  background-color: #252525;
+  border-color: #252525;
 }
 .navbar-default .navbar-toggle .icon-bar {
   background-color: white;
@@ -184,12 +184,12 @@ fieldset[disabled] .btn-xl.active {
 }
 .navbar-default .navbar-nav > .active > a {
   border-radius: 0;
-  color: black;
+  color: #252525;
   background-color: white;
 }
 .navbar-default .navbar-nav > .active > a:hover,
 .navbar-default .navbar-nav > .active > a:focus {
-  color: black;
+  color: #252525;
   background-color: white;
 }
 @media (min-width: 768px) {
@@ -211,7 +211,7 @@ fieldset[disabled] .btn-xl.active {
     border-radius: 3px;
   }
   .navbar-default.navbar-shrink {
-    background-color: black;
+    background-color: #252525;
     opacity: 85%;
     padding: 20px 0;
   }
@@ -220,7 +220,7 @@ fieldset[disabled] .btn-xl.active {
   }
 }
 header {
-  background-color: black;
+  background-color: #252525;
   background-repeat: none;
   background-attachment: scroll;
   -webkit-background-size: cover;
@@ -273,7 +273,7 @@ section {
   padding: 150px 0;
 }
 section h2.section-heading {
-  color: black;
+  color: #252525;
   font-size: 40px;
   margin-top: 0;
   margin-bottom: 15px;
@@ -315,7 +315,7 @@ section h3.section-subheading {
   margin: 0 auto;
 }
 #portfolio .portfolio-item .portfolio-link .portfolio-hover {
-  background: black;
+  background: #252525;
   position: absolute;
   width: 100%;
   height: 100%;
@@ -424,7 +424,7 @@ section h3.section-subheading {
   position: absolute;
   z-index: 100;
   background-color: white;
-  color: black;
+  color: #252525;
   border-radius: 100%;
   border: 5px solid #222222;
   text-align: center;
@@ -547,7 +547,7 @@ section h3.section-subheading {
 }
 
 section#contact {
-  background-color: black;
+  background-color: #252525;
   background-position: center;
   background-repeat: no-repeat;
   padding: 0px;
@@ -569,7 +569,7 @@ section#contact .form-group textarea.form-control {
   height: 236px;
 }
 section#contact .form-control:focus {
-  border-color: black;
+  border-color: #252525;
   box-shadow: none;
 }
 section#contact ::-webkit-input-placeholder {
@@ -599,7 +599,7 @@ section#contact :-ms-input-placeholder {
   color: #bbbbbb;
 }
 section#contact .text-danger {
-  color: black;
+  color: #252525;
 }
 footer {
   padding: 25px 0;
@@ -630,7 +630,7 @@ ul.social-buttons li a {
   border-radius: 100%;
   font-size: 20px;
   line-height: 40px;
-  color: black;
+  color: #252525;
   outline: none;
   -webkit-transition: all 0.3s;
   -moz-transition: all 0.3s;
@@ -650,7 +650,7 @@ ul.social-buttons li a:active {
 }
 .portfolio-modal .modal-content {
   border-radius: 0;
-  background-color: black;
+  background-color: #252525;
   background-clip: border-box;
   -webkit-box-shadow: none;
   box-shadow: none;
@@ -726,11 +726,11 @@ ul.social-buttons li a:active {
 }
 ::-moz-selection {
   text-shadow: none;
-  background: black;
+  background: #252525;
 }
 ::selection {
   text-shadow: none;
-  background: black;
+  background: #252525;
 }
 img::selection {
   background: transparent;
