@@ -38,8 +38,9 @@ h4,
 h5,
 h6 {
   font-family: "Montserrat";
-  text-transform: uppercase;
   font-weight: 700;
+  line-height: 1.2em;
+  margin: 0 0 0.5em;
 }
 .img-centered {
   margin: 0 auto;
@@ -95,25 +96,26 @@ fieldset[disabled] .btn-primary.active {
   background-color: white;
 }
 .btn-xl {
-  color: white;
-  background-color: #252525;
-  font-family: "Montserrat";
-  text-transform: uppercase;
+  background-color: #181818;
+  -webkit-border-radius: 50px;
+  border-radius: 50px;
+  color: #fff;
+  font-size: 12px;
   font-weight: 700;
-  border-radius: 3px;
-  font-size: 18px;
-  padding: 20px 40px;
+  letter-spacing: 1px;
+  min-width: 190px;
+  padding: 15px;
+  text-align: center;
+  text-transform: uppercase;
 }
 .btn-xl:hover,
 .btn-xl:focus,
 .btn-xl:active,
 .btn-xl.active,
 .open .dropdown-toggle.btn-xl {
-  color: #252525;
-  background-color: white;
-  border-color: #252525;
+  color: #757575;
 }
-.btn-xl:active,
+.btn-xl:active,intro-heading
 .btn-xl.active,
 .open .dropdown-toggle.btn-xl {
   background-image: none;
@@ -173,11 +175,11 @@ fieldset[disabled] .btn-xl.active {
 }
 .navbar-default .nav li a {
   font-family: "Montserrat";
-  font-weight: 32.4px;
-  letter-spacing: 2px;
+  font-size: 18px;
+  font-weight: 700;
   color: white;
 }
-.navbar-default .nav li a:hover,
+.navbar-default .nav li a:hover,b
 .navbar-default .nav li a:focus {
   color: rgb(87,87,87);
   outline: none;
@@ -195,7 +197,7 @@ fieldset[disabled] .btn-xl.active {
 @media (min-width: 768px) {
   .navbar-default {
     background-color: transparent;
-    padding: 25px 0;
+    padding: 65px 0;
     -webkit-transition: padding 0.3s;
     -moz-transition: padding 0.3s;
     transition: padding 0.3s;
@@ -208,7 +210,9 @@ fieldset[disabled] .btn-xl.active {
     transition: all 0.3s;
   }
   .navbar-default .navbar-nav > .active > a {
-    border-radius: 3px;
+    border-radius: 36px;
+    padding: 5px 20px;
+    margin-top: 11px;
   }
   .navbar-default.navbar-shrink {
     background-color: #252525;
@@ -238,35 +242,39 @@ header .intro-text .intro-lead-in {
   font-family: "Montserrat";
   font-size: 22px;
   line-height: 22px;
-  margin-bottom: 25px;
+  margin-bottom: 40px;
 }
 header .intro-text .intro-heading {
   font-family: "Montserrat";
   text-transform: normal;
   font-weight: 700;
   font-size: 50px;
-  margin-bottom: 25px;
+  margin-bottom: 40px;
 }
 
 
 
 @media (min-width: 768px) {
   header .intro-text {
-    padding-top: 200px;
+    padding-top: 250px;
+    height: 100vh;
   }
   header .intro-text .intro-lead-in {
     font-family: "Montserrat";
-    font-size: 40px;
-    line-height: 40px;
-    margin-bottom: 25px;
+    color: white;
+    display: inline-block;
+    font-size: 15px;
+    font-weight: 400;
+    line-height: 1.7em;
   }
   header .intro-text .intro-heading {
     font-family: "Montserrat";
-    text-transform: normal;
-    font-weight: 800;
-    font-size: 70px;
+    font-size: calc(38px);
     line-height: 80px;
     margin-bottom: 50px;
+    font-weight: 700;
+    line-height: 1.2em;
+    margin: 0 0 0.5em;
   }
 }
 section {
@@ -602,7 +610,7 @@ section#contact .text-danger {
   color: #252525;
 }
 footer {
-  padding: 25px 0;
+  padding: 65px 0;
   text-align: center;
 }
 footer span.copyright {
@@ -737,4 +745,13 @@ img::selection {
 }
 img::-moz-selection {
   background: transparent;
+}
+
+.navbar-nav .fa-rocket {
+  background: none;
+  border: none;
+  padding: 0;
+  margin: 0;
+  font-size: 1em; /* Ajusta el tamaño del ícono según sea necesario */
+  transition: transform 0.3s ease;
 }
