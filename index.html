@@ -10,7 +10,34 @@
     <meta name="description" content="">
     <meta name="author" content="">
 
-    <title>Ignacio Paez</title>
+    <title>Ignacio Páez: me</title>
+
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            const sections = document.querySelectorAll('section');
+            const titleBase = "Ignacio Páez";
+            const firstSectionId = "home";  // Asegúrate de que el id de la primera sección sea "home"
+
+            window.addEventListener('scroll', function() {
+                let currentSection = firstSectionId;  // Default to the first section
+
+                sections.forEach(section => {
+                    const sectionTop = section.offsetTop - 50;
+                    if (pageYOffset >= sectionTop) {
+                        currentSection = section.getAttribute('id');
+                    }
+                });
+
+                if (currentSection === firstSectionId) {
+                    document.title = `${titleBase}`;
+                } else {
+                    document.title = `${titleBase} - ${currentSection.charAt(0).toUpperCase() + currentSection.slice(1)}`;
+                }
+            });
+        });
+    </script>
+
+
 
     <!-- Bootstrap Core CSS -->
     <link href="css/bootstrap.min.css" rel="stylesheet">
@@ -65,9 +92,9 @@
 
             <!-- Collect the nav links, forms, and other content for toggling -->
             <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
-                <ul class="nav navbar-nav navbar-right">
+                <ul class="nav navbar-nav navbar-right" href="#me">
                     <li class="hidden">
-                        <a href="#page-top"></a>
+                        <a href="#page-top" href="#me"></a>
                     </li>
                     <li>
                         <a class="page-scroll" href="#services">Services</a>
@@ -79,7 +106,7 @@
                         <a class="page-scroll" href="#about">About</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link page-scroll" href="#contact"><i class="fa fa-angle-down" aria-hidden="true"></i></a>
+                        <a class="nav-link page-scroll" href="#contact">#</a>
                     </li>
                 </ul>
             </div>
