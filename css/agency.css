@@ -363,10 +363,12 @@ section h3.section-subheading {
 #portfolio .portfolio-item .portfolio-caption h4 {
   text-transform: none;
   margin: 0;
+  height: 18px;
 }
 #portfolio .portfolio-item .portfolio-caption p {
   font-family: "Montserrat";
   font-size: 14px;
+  height: 14px;
   margin: 0;
 }
 #portfolio * {
@@ -388,7 +390,7 @@ section h3.section-subheading {
   position: absolute;
   content: "";
   width: 2px;
-  background-color: grey;
+  /* background-color: red; */
   left: 40px;
   margin-left: -1.5px;
 }
@@ -396,6 +398,7 @@ section h3.section-subheading {
   margin-bottom: 50px;
   position: relative;
   min-height: 50px;
+  /* background-color: blue; */
 }
 .timeline > li:before,
 .timeline > li:after {
@@ -427,14 +430,13 @@ section h3.section-subheading {
 .timeline > li .timeline-image {
   left: 0;
   margin-left: 0;
-  width: 80px;
-  height: 80px;
+  width: 100px;
+  height: 100px;
   position: absolute;
   z-index: 100;
   background-color: white;
   color: #252525;
   border-radius: 100%;
-  border: 5px solid #222222;
   text-align: center;
 }
 .timeline > li .timeline-image h4 {
@@ -481,10 +483,6 @@ section h3.section-subheading {
 @media (min-width: 768px) {
   .timeline:before {
     left: 50%;
-  }
-  .timeline > li {
-    margin-bottom: 100px;
-    min-height: 100px;
   }
   .timeline > li .timeline-panel {
     width: 41%;
@@ -662,11 +660,18 @@ ul.social-buttons li a:active {
   background-clip: border-box;
   -webkit-box-shadow: none;
   box-shadow: none;
-  border: none;
+  border-radius: 8px;
   min-height: 100%;
-  padding: 100px 0;
+  padding: 50px 0;
   text-align: center;
   color: white;
+  margin: 80px 80px;
+}
+
+.triloco-container {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  column-gap: 30px;
 }
 .portfolio-modal .modal-content h2 {
   margin-bottom: 15px;
