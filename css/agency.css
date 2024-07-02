@@ -160,6 +160,8 @@ fieldset[disabled] .btn-xl.active {
   color: #252525;
 }
 .navbar-default .navbar-collapse {
+  display: flex;
+  justify-content: center;
   border-color: rgba(255, 255, 255, 0.02);
 }
 .navbar-default .navbar-toggle {
@@ -171,14 +173,17 @@ fieldset[disabled] .btn-xl.active {
 }
 .navbar-default .navbar-toggle:hover,
 .navbar-default .navbar-toggle:focus {
-  background-color: white;
+  background-color: #252525;;
 }
 .navbar-default .nav li a {
   font-family: "Montserrat";
   font-size: 18px;
   font-weight: 700;
   color: white;
+  display: flex;
+  justify-content: center;
 }
+
 .navbar-default .nav li a:hover,b
 .navbar-default .nav li a:focus {
   color: rgb(87,87,87);
@@ -237,7 +242,113 @@ header {
 header .intro-text {
   padding-top: 100px;
   padding-bottom: 10px;
+  display: flex;
+  flex-direction: row;
 }
+
+.intro-heading-container {
+  display: flex;
+  flex-direction: column;
+}
+
+.intro-heading-container {
+  display: flex;
+  flex-direction: column;
+}
+
+
+@media (min-width: 1200px) {
+
+  .intro-heading-container {
+    display: flex;
+    flex-direction: column;
+    padding-right: 470px;
+  }
+
+  .img-container-naxo {
+    display: flex;
+    flex-wrap: wrap; /* Permite que las imágenes se envuelvan en múltiples líneas si es necesario */
+    justify-content: space-between; /* Distribuye las imágenes con espacios entre ellas */
+    height: 24%;
+    width: 24%;
+    /* margin-left: 50px; */
+  }
+
+  .img-container-naxo img {
+    width: calc(50% - 6px); /* Calcula el ancho de cada imagen (50% del contenedor menos el espacio entre ellas) */
+    margin-bottom: 12px; /* Espacio inferior entre las filas */
+    border-radius: 5px;
+  }
+
+  .img-container-naxo img:nth-child(odd) {
+    margin-right: 10px; /* Espacio derecho entre las columnas */
+    margin-left: 10px;
+  }
+
+  .img-responsive {
+    max-width: 100%;
+    height: auto;
+    display: block;
+    margin: 0 auto;
+    transition: transform 0.3s ease-in-out; /* Agrega una transición a las imágenes */
+}
+
+.img-responsive:hover {
+    transform: scale(1.5);
+}
+
+}
+
+@media (max-width: 1199px) {
+
+  .img-container-naxo {
+    display: none;
+    flex-wrap: wrap;
+    justify-content: center; /* Centra las imágenes verticalmente */
+    margin-bottom: 20px; /* Espacio entre las imágenes y el botón */
+  }
+
+  .img-container-naxo img {
+    width: 100%; /* Ocupa todo el ancho disponible */
+    margin-bottom: 12px;
+    border-radius: 5px;
+  }
+
+  .intro-heading-container {
+    text-align: start; /* Centra el texto en dispositivos móviles */
+  }
+
+  .intro-lead-in {
+    text-align: start; /* Centra el texto en dispositivos móviles */
+    margin-bottom: 20px; /* Espacio inferior */
+  }
+}
+
+
+@media (min-width: 500px) {
+
+  .img-container-naxo-mobile {
+    display: none;
+    flex-wrap: wrap; /* Permite que las imágenes se envuelvan en múltiples líneas si es necesario */
+    flex-direction: column-reverse;
+    justify-content: space-between; /* Distribuye las imágenes con espacios entre ellas */
+    height: 24%;
+    width: 24%;
+    margin-left: 256px;
+  }
+
+  .img-container-naxo img {
+    width: calc(50% - 10px); /* Calcula el ancho de cada imagen (50% del contenedor menos el espacio entre ellas) */
+    margin-bottom: 10px; /* Espacio inferior entre las filas */
+  }
+
+  .img-container-naxo img:nth-child(odd) {
+    margin-right: 10px; /* Espacio derecho entre las columnas */
+  }
+
+}
+
+
 header .intro-text .intro-lead-in {
   font-family: "Montserrat";
   font-size: 16px;
