@@ -160,9 +160,7 @@ fieldset[disabled] .btn-xl.active {
   color: #252525;
 }
 .navbar-default .navbar-collapse {
-  display: flex;
-  justify-content: center;
-  border-color: rgba(255, 255, 255, 0.02);
+  border: 1px solid rgba(255, 255, 255, 0.02);
 }
 
 .logo-img {
@@ -172,7 +170,7 @@ fieldset[disabled] .btn-xl.active {
 }
 
 .logo-img:hover {
-  transform: rotate(-46deg) scale(1.1);
+  transform: rotate(-46deg);
 }
 
 
@@ -268,6 +266,21 @@ header .intro-text {
   flex-direction: column;
 }
 
+.img-container-naxo-mobile {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  padding: 45px;
+  gap: 16px;
+}
+
+.intro-text .intro-heading-container .intro-text {
+  margin-top: 10px;
+}
+
+.intro-text.intro-heading-container .intro-heading {
+  margin-top: 10px;
+}
+
 
 @media (min-width: 1200px) {
 
@@ -283,7 +296,6 @@ header .intro-text {
     justify-content: space-between; /* Distribuye las imágenes con espacios entre ellas */
     height: 24%;
     width: 24%;
-    /* margin-left: 50px; */
   }
 
   .img-container-naxo img {
@@ -341,12 +353,6 @@ header .intro-text {
 
   .img-container-naxo-mobile {
     display: none;
-    flex-wrap: wrap; /* Permite que las imágenes se envuelvan en múltiples líneas si es necesario */
-    flex-direction: column-reverse;
-    justify-content: space-between; /* Distribuye las imágenes con espacios entre ellas */
-    height: 24%;
-    width: 24%;
-    margin-left: 256px;
   }
 
   .img-container-naxo img {
@@ -374,7 +380,6 @@ header .intro-text .intro-heading {
   font-size: 25px;
   line-height: 25px;
   margin-bottom: 16px;
-  margin-top: 260px;
 }
 
 
