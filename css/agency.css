@@ -269,8 +269,12 @@ header .intro-text {
 .img-container-naxo-mobile {
   display: grid;
   grid-template-columns: 1fr 1fr;
-  padding: 45px;
-  gap: 16px;
+  padding: 0px 20px 40px 20px;
+  gap: 14px;
+}
+
+.img-container-naxo-mobile img {
+  border-radius: 5px;
 }
 
 .intro-text .intro-heading-container .intro-text {
