@@ -288,6 +288,10 @@ header .intro-text {
 
 @media (min-width: 1200px) {
 
+  .navbar-default .navbar-collapse {
+    border: none;
+  }
+
   .intro-heading-container {
     display: flex;
     flex-direction: column;
