@@ -306,20 +306,26 @@ header .intro-text {
 
   .img-container-naxo {
     display: flex;
-    flex-wrap: wrap; /* Permite que las imágenes se envuelvan en múltiples líneas si es necesario */
-    justify-content: space-between; /* Distribuye las imágenes con espacios entre ellas */
+    flex-wrap: wrap;
+    justify-content: space-between;
     height: 24%;
     width: 24%;
   }
 
+  .img-container-naxo .img-responsive:hover {
+    transform: scale(1.5) rotate(360deg);
+    transition: transform 1.5s ease, opacity 1s ease;
+    background-color: transparent;
+  }
+
   .img-container-naxo img {
-    width: calc(50% - 6px); /* Calcula el ancho de cada imagen (50% del contenedor menos el espacio entre ellas) */
-    margin-bottom: 12px; /* Espacio inferior entre las filas */
+    width: calc(50% - 6px);
+    margin-bottom: 12px;
     border-radius: 5px;
   }
 
   .img-container-naxo img:nth-child(odd) {
-    margin-right: 10px; /* Espacio derecho entre las columnas */
+    margin-right: 10px;
     margin-left: 10px;
   }
 
@@ -328,12 +334,9 @@ header .intro-text {
     height: auto;
     display: block;
     margin: 0 auto;
-    transition: transform 0.3s ease-in-out; /* Agrega una transición a las imágenes */
+    transition: transform 0.3s ease-in-out;
 }
 
-.img-responsive:hover {
-    transform: scale(1.5);
-}
 
 .modal-content .img-responsive:hover {
     transform: none;
@@ -354,23 +357,23 @@ header .intro-text {
   .img-container-naxo {
     display: none;
     flex-wrap: wrap;
-    justify-content: center; /* Centra las imágenes verticalmente */
-    margin-bottom: 20px; /* Espacio entre las imágenes y el botón */
+    justify-content: center;
+    margin-bottom: 20px;
   }
 
   .img-container-naxo img {
-    width: 100%; /* Ocupa todo el ancho disponible */
+    width: 100%;
     margin-bottom: 12px;
     border-radius: 5px;
   }
 
   .intro-heading-container {
-    text-align: start; /* Centra el texto en dispositivos móviles */
+    text-align: start;
   }
 
   .intro-lead-in {
-    text-align: start; /* Centra el texto en dispositivos móviles */
-    margin-bottom: 20px; /* Espacio inferior */
+    text-align: start;
+    margin-bottom: 20px;
   }
 }
 
@@ -382,12 +385,12 @@ header .intro-text {
   }
 
   .img-container-naxo img {
-    width: calc(50% - 10px); /* Calcula el ancho de cada imagen (50% del contenedor menos el espacio entre ellas) */
-    margin-bottom: 10px; /* Espacio inferior entre las filas */
+    width: calc(50% - 10px);
+    margin-bottom: 10px;
   }
 
   .img-container-naxo img:nth-child(odd) {
-    margin-right: 10px; /* Espacio derecho entre las columnas */
+    margin-right: 10px;
   }
 
 }
@@ -476,7 +479,6 @@ section h3.section-subheading {
     font-size: 12px;
     font-weight: 700;
     letter-spacing: 1px;
-    /* min-width: 150px; */
     padding: 15px;
     text-align: center;
     text-transform: uppercase;
@@ -565,7 +567,6 @@ section h3.section-subheading {
   position: absolute;
   content: "";
   width: 2px;
-  /* background-color: red; */
   left: 40px;
   margin-left: -1.5px;
 }
@@ -573,7 +574,6 @@ section h3.section-subheading {
   margin-bottom: 50px;
   position: relative;
   min-height: 50px;
-  /* background-color: blue; */
 }
 .timeline > li:before,
 .timeline > li:after {
@@ -924,13 +924,4 @@ img::selection {
 }
 img::-moz-selection {
   background: transparent;
-}
-
-.navbar-nav .fa-rocket {
-  background: none;
-  border: none;
-  padding: 0;
-  margin: 0;
-  font-size: 1em; /* Ajusta el tamaño del ícono según sea necesario */
-  transition: transform 0.3s ease;
 }
