@@ -313,9 +313,9 @@ header .intro-text {
   }
 
   .img-container-naxo .img-responsive:hover {
-    transform: scale(1.5) rotate(360deg);
-    transition: transform 1.5s ease, opacity 1s ease;
-    background-color: transparent;
+    /* transform: scale(1.5) rotate(360deg); */
+    transform: scale(1.5);
+    transition: transform 1s;
   }
 
   .img-container-naxo img {
@@ -837,7 +837,7 @@ ul.social-buttons li a:active {
   box-shadow: none;
   border-radius: 8px;
   min-height: 100%;
-  padding: 50px 0;
+  padding: 50px 6px;
   text-align: start;
   color: white;
 }
